@@ -1,6 +1,7 @@
 # ------------------------ read input data from excel. ----------------------- #
 using XLSX, DataFrames
 
+# 读取excel 表单数据
 function read_ht_parameter()
     df = XLSX.readxlsx("C:/Users/15703/OneDrive/桌面/ht/HTM_parameter.xlsx")
 
@@ -15,6 +16,7 @@ function read_ht_parameter()
     return inputdata
 end
 
+# 读取当前层导热数据
 function read_ht_eachlayer_parameter(inputdata, i)
     cₐ, cₚ, k, k_fab, L, T, H₀, ρ, ϵ = inputdata[2, i],
     inputdata[3, i],
