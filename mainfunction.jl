@@ -18,8 +18,8 @@ for i in 1:1
     tem = read_ht_eachlayer_parameter(inputdata, i)
     boundarydata, parameter, dx, dt = ht_boundarydata(sol, tem, i) # 可以自定义差分参数
     sol = ht_model(boundarydata, parameter, dx, dt) # 传递边界温度数据
-    # println(sol[3,:])
-    # println(sol[:,3])
+    println(sol[3,:])
+    println(sol[:,3])
 end
 
 # only for test

@@ -3,7 +3,7 @@ using XLSX, DataFrames
 
 # 读取excel 表单数据
 function read_ht_parameter()
-    df = XLSX.readxlsx("C:/Users/15703/OneDrive/桌面/ht/HTM_parameter.xlsx")
+    df = XLSX.readxlsx("D:/Remote_GitHub_repositiories/ht/ht---julia-version/HTM_parameter.xlsx")
 
     # part-1: read frequency data
     unitsfreqparam = df["heat transfer model_info"]
